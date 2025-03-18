@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <button onclick="popupFn()" class="btn">Pay</button>
+    <div id="overlay"></div>
+    <div id="popup">
+        <p>Your payment is successful</p>
+        <button onclick="closeFn()" src="btn2">Close</button>
+    </div>
+</body>
+<script>
+    function popupFn() {
+        document.getElementById("overlay").style.display = "block";
+        document.getElementById("popup").style.display = "block";
+    }
+    function closeFn() {
+        document.getElementById("overlay").style.display = "none";
+        document.getElementById("popup").style.display = "none";
+    }
+</script>
+
+</html>

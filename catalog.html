@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="catalog.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img class="logopic" src="images/Vector.svg">
+            <img id="bar" class="icon" onclick="func()" src="images/Group 22.svg">
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">My order</a></li>
+            <li><a href="#">Catalog</a></li>
+        </ul>
+        <div class="icons">
+            <img class="icon" src="images/cart.svg">
+            <img class="icon" src="images/fav.svg">
+            <img class="icon" src="images/user.svg">
+        </div>
+    </nav>
+    <section class="banner">
+        <div class="block">
+            <h1>Elevate Your<br> Every Day</h1>
+            <p>Our goods are functional and beautiful-because we think you deserve both.</p>
+        </div>
+    </section>
+    <section class="filter">
+        <div class="price-and-product">
+            <div class="filterdivs">
+                <h3>Filter by</h3>
+                <hr>
+                <h3>Collection</h3>
+                <div class="all">
+                    <div class="text">
+                        <p>Best Seller</p>
+                    </div>
+                    <div class="checkboxes" id="check" data-filter="best">
+                        <input type="checkbox">
+                    </div>
+                </div>
+                <div class="all">
+                    <div class="text">
+                        <p>Face washables</p>
+                    </div>
+                    <div class="checkboxes" id="check" data-filter="face">
+                        <input type="checkbox">
+                    </div>
+                </div>
+                <div class="all">
+                    <div class="text">
+                        <p>Toner</p>
+                    </div>
+                    <div class="checkboxes" id="check" data-filter="toner">
+                        <input type="checkbox">
+                    </div>
+                </div>
+                <hr>
+                <h3>Price</h3>
+                <div class="all">
+                    <div class="text">
+                        <p>Under 100$</p>
+                    </div>
+                    <div class="checkboxes">
+                        <input type="checkbox">
+                    </div>
+                </div>
+                <div class="all">
+                    <div class="text">
+                        <p>Under 200$</p>
+                    </div>
+                    <div class="checkboxes">
+                        <input type="checkbox">
+                    </div>
+                </div>
+                <div class="all">
+                    <div class="text">
+                        <p>Under 50$</p>
+                    </div>
+                    <div class="checkboxes">
+                        <input type="checkbox">
+                    </div>
+                </div>
+                <div class="all">
+                    <div class="text">
+                        <p>Under 100$</p>
+                    </div>
+                    <div class="checkboxes">
+                        <input type="checkbox">
+                    </div>
+                </div>
+                <hr>
+                <div class="plus">
+                    <h3>Material</h3>
+                    <p class="pluss">+</p>
+                </div>
+                <hr>
+                <div class="all">
+                    <div class="text">
+                        <p class="text2">Materials are given by masters which are fabricating only natural and
+                            eco-friendly materials.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="plus">
+                    <h3>Brand</h3>
+                    <p class="pluss">+</p>
+                </div>
+                <hr>
+                <div class="all">
+                    <div class="text">
+                        <p class="text2">Materials are given by masters which are fabricating only natural and
+                            eco-friendly materials.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>111 products</p>
+            <div class="products-list">
+                <div class="products" data-filter="best">
+                    <img class="product-pic" src="images/i.webp">
+                    <h4>5 piece ultimate tool set</h4>
+                    <div class="starandpoint">
+                        <div class="star">
+                            <img class="starpicture" src="images/erasebg-transformed.png">
+                        </div>
+                        <div class="star">
+                            <p>4.9(10)-- $55</p>
+                        </div>
+                    </div>
+                    <button class="order">Order</button>
+                </div>
+
+                <div class="products" data-filter="face" data-id="1" data-price="55"
+                    data-image="images/erasebg-transformed.webp" data-name="5 piece ultimate tool set">
+                    <img class="product-pic" src="images/erasebg-transformed.webp">
+                    <h4>5 piece ultimate tool set</h4>
+                    <div class="starandpoint">
+                        <div class="star">
+                            <img class="starpicture" src="images/erasebg-transformed.png">
+                        </div>
+                        <div class="star">
+                            <p>4.9(10)-- $55</p>
+                        </div>
+                    </div>
+                    <button class="order">Order</button>
+                </div>
+
+                <div class="products" data-filter="toner" data-id="2" data-price="55" data-image="images/toner.png"
+                    data-name="5 piece ultimate tool set">
+                    <img class="product-pic" src="images/toner.png">
+                    <h4>5 piece ultimate tool set</h4>
+                    <div class="starandpoint">
+                        <div class="star">
+                            <img class="starpicture" src="images/erasebg-transformed.png">
+                        </div>
+                        <div class="star">
+                            <p>4.9(10)-- $55</p>
+                        </div>
+                    </div>
+                    <button class="order">Order</button>
+                </div>
+
+                <div class="products" data-filter="face" data-id="2" data-price="55"
+                    data-image="images/erasebg-transformed.webp">
+                    <img class="product-pic" src="images/erasebg-transformed.webp">
+                    <h4>5 piece ultimate tool set</h4>
+                    <div class="starandpoint">
+                        <div class="star">
+                            <img class="starpicture" src="images/erasebg-transformed.png">
+                        </div>
+                        <div class="star">
+                            <p>4.9(10)-- $55</p>
+                        </div>
+                    </div>
+                    <button class="order">Order</button>
+                </div>
+
+                <div class="products" data-filter="toner" data-id="3" data-price="55" data-image="images/toner.png">
+                    <img class="product-pic" src="images/toner.png">
+                    <h4>5 piece ultimate tool set</h4>
+                    <div class="starandpoint">
+                        <div class="star">
+                            <img class="starpicture" src="images/erasebg-transformed.png">
+                        </div>
+                        <div class="star">
+                            <p>4.9(10)-- $55</p>
+                        </div>
+                    </div>
+                    <button class="order">Order</button>
+                </div>
+
+                <div class="products" data-filter="best" data-id="4" data-price="55" data-image="images/i.webp">
+                    <img class="product-pic" src="images/i.webp">
+                    <h4>5 piece ultimate tool set</h4>
+                    <div class="starandpoint">
+                        <div class="star">
+                            <img class="starpicture" src="images/erasebg-transformed.png">
+                        </div>
+                        <div class="star">
+                            <p>4.9(10)-- $55</p>
+                        </div>
+                    </div>
+                    <button class="order">Order</button>
+                </div>
+
+                <div class="products" data-filter="best" data-id="5" data-price="55"
+                    data-image="images/erasebg-transformed.webp">
+                    <img class="product-pic" src="images/erasebg-transformed.webp">
+                    <h4>5 piece ultimate tool set</h4>
+                    <div class="starandpoint">
+                        <div class="star">
+                            <img class="starpicture" src="images/erasebg-transformed.png">
+                        </div>
+                        <div class="star">
+                            <p>4.9(10)-- $55</p>
+                        </div>
+                    </div>
+                    <button class="order">Order</button>
+                </div>
+
+                <div class="products" data-filter="toner" data-id="6" data-price="55"
+                    data-image="images/erasebg-transformed.png">
+                    <img class="product-pic" src="images/toner.png">
+                    <h4>5 piece ultimate tool set</h4>
+                    <div class="starandpoint">
+                        <div class="star">
+                            <img class="starpicture" src="images/erasebg-transformed.png">
+                        </div>
+                        <div class="star">
+                            <p>4.9(10)-- $55</p>
+                        </div>
+                    </div>
+                    <button class="order">Order</button>
+                </div>
+
+                <div class="products" data-filter="best" data-id="7" data-price="55"
+                    data-image="images/erasebg-transformed.png">
+                    <img class="product-pic" src="images/i.webp">
+                    <h4>5 piece ultimate tool set</h4>
+                    <div class="starandpoint">
+                        <div class="star">
+                            <img class="starpicture" src="images/erasebg-transformed.png">
+                        </div>
+                        <div class="star">
+                            <p>4.9(10)-- $55</p>
+                        </div>
+                    </div>
+                    <button class="order">Order</button>
+                </div>
+
+
+                <div class="products" data-filter="face" data-id="8" data-price="55"
+                    data-image="images/erasebg-transformed.png">
+                    <img class="product-pic" src="images/erasebg-transformed.webp">
+                    <h4>5 piece ultimate tool set</h4>
+                    <div class="starandpoint">
+                        <div class="star">
+                            <img class="starpicture" src="images/erasebg-transformed.png">
+                        </div>
+                        <div class="star">
+                            <p>4.9(10)-- $55</p>
+                        </div>
+                    </div>
+                    <button class="order">Order</button>
+                </div>
+
+
+                <div class="products" data-filter="toner" data-id="9" data-price="55"
+                    data-image="images/erasebg-transformed.png">
+                    <img class="product-pic" src="images/toner.png">
+                    <h4>5 piece ultimate tool set</h4>
+                    <div class="starandpoint">
+                        <div class="star">
+                            <img class="starpicture" src="images/erasebg-transformed.png">
+                        </div>
+                        <div class="star">
+                            <p>4.9(10)-- $55</p>
+                        </div>
+                    </div>
+                    <button class="order">Order</button>
+                </div>
+
+
+                <div class="products" data-filter="best" data-id="10" data-price="55"
+                    data-image="images/erasebg-transformed.png">
+                    <img class="product-pic" src="images/i.webp">
+                    <h4>5 piece ultimate tool set</h4>
+                    <div class="starandpoint">
+                        <div class="star">
+                            <img class="starpicture" src="images/erasebg-transformed.png">
+                        </div>
+                        <div class="star">
+                            <p>4.9(10)-- $55</p>
+                        </div>
+                    </div>
+                    <button class="order">Order</button>
+                </div>
+
+                <div class="products2" data-filter="best" data-id="11" data-price="55"
+                    data-image="images/erasebg-transformed.png">
+                    <img class="product-pic" src="images/i.webp">
+                    <h4>5 piece ultimate tool set</h4>
+                    <div class="starandpoint">
+                        <div class="star">
+                            <img class="starpicture" src="images/erasebg-transformed.png">
+                        </div>
+                        <div class="star">
+                            <p>4.9(10)-- $55</p>
+                        </div>
+                    </div>
+                    <button class="order">Order</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="see">
+            <button class="seeing">See More</button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-elements">
+            <div class="picandicons">
+                <div class="footer-content">
+                    <img class="fpic" src="images/Vector.svg">
+                </div>
+                <div class="soc-icon">
+                    <img class="iconpic" src="images/leaf.svg">
+                    <img class="iconpic" src="images/leaf.svg">
+                    <img class="iconpic" src="images/leaf.svg">
+                </div>
+            </div>
+            <div class="footer-content">
+                <h4>Home</h4>
+                <li><a class="flink" href="#">About</a></li>
+                <li><a class="flink" href="#">Contact</a></li>
+                <li><a class="flink" href="#">Why us?</a></li>
+            </div>
+            <div class="footer-content">
+                <h4>Privacy Policy</h4>
+                <li><a class="flink" href="#">About refunds</a></li>
+                <li><a class="flink" href="#">Guarantee fee</a></li>
+                <li><a class="flink" href="#">Guarantee fee</a></li>
+            </div>
+            <div class="footer-content">
+                <h4>Sales</h4>
+                <li><a class="flink" href="#">Happy Tuesday</a></li>
+                <li><a class="flink" href="#">Happy Friday</a></li>
+                <li><a class="flink" href="#">Happy Saturday</a></li>
+            </div>
+            <div class="footer-content">
+                <h4>FAQ</h4>
+                <li><a class="flink" href="#">About our locations</a></li>
+                <li><a class="flink" href="#">Instructions</a></li>
+                <li><a class="flink" href="#">Why we</a></li>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="js/nav.js"></script>
+<script src="js/filter.js"></script>
+<script src="js/seemore.js"></script>
+<script src="js/dropdown.js"></script>
+<script src="js/orders.js"></script>
+
+</html>

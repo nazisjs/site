@@ -1,0 +1,9 @@
+#cart-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.cart-product {
+    background-color: aqua;
+}
